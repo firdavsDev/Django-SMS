@@ -5,7 +5,7 @@ Django send SMS using API(uz)
 Quick start
 ------------
 1. Create a new project
-2. pip install django-sms-uz==1.0.0, pip install djangorestframework and pip install requests
+2. pip install django-sms-uz , pip install djangorestframework and pip install requests
 3. Add the following to your settings.py file: INSTALLED_APPS = ( ... 'SMS', ... ) SMS_SETTINGS = {"SMS_URL": "http://91.204.239.44/broker-api/send","SMS_LOGIN": "LOGIN","SMS_PASSWORD": "PASSWORD"} set in your settings.py file
 4. Add the following to your urls.py file:
     path('sms/', include('SMS.urls')),
