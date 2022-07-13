@@ -15,7 +15,7 @@ SMS/migrations/0001_initial.py
 SMS/migrations/0002_delete_smstoken.py
 SMS/migrations/0003_remove_smslog_code.py
 SMS/migrations/__init__.py
-django_sms.egg-info/PKG-INFO
-django_sms.egg-info/SOURCES.txt
-django_sms.egg-info/dependency_links.txt
-django_sms.egg-info/top_level.txt
+django_sms_uz.egg-info/PKG-INFO
+django_sms_uz.egg-info/SOURCES.txt
+django_sms_uz.egg-info/dependency_links.txt
+django_sms_uz.egg-info/top_level.txt
