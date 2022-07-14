@@ -1,37 +1,37 @@
-## Welcome to GitHub Pages
+#Django send SMS using API(uz)
+================================
 
-You can use the [editor on GitHub](https://github.com/firdavsDev/Django-SMS/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+You can use the [Django SMS](https://github.com/firdavsDev/Django-SMS) to quickly add SMS sender app in your Django project.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+> Quickly start
+------------
+1. Create a new project
+2. pip install django-sms-uz , pip install djangorestframework and pip install requests
+3. Add the following to your settings.py file: 
+4. ```INSTALLED_APPS = ( ... 'SMS', ... ) SMS_SETTINGS = {"SMS_URL": "http://91.204.239.44/broker-api/send","SMS_LOGIN": "LOGIN","SMS_PASSWORD": "PASSWORD"} ```
+set in your settings.py file
+9. Add the following to your urls.py file:
+    ```path('sms/', include('SMS.urls'))```,
+5. Run ``python manage.py migrate`` to create the database tables
+6. Start your Django development server ``python manage.py runserver`` and go to http://localhost:8000/sms/send_sms/
+7. Enter your phone number and message and click send
+8. Check your terminal for a response and Django admin will tell you if it was successful or not
+9. You could use call ``from SMS.sms_utils import SMS_Sender`` to get the SMS class and send sms using by the way ``SMS_Sender(phone_number, message).SendSmsOneContact()`` it returns a response
+10. Don't forget to add ``SMS`` to your INSTALLED_APPS list and add 
+```SMS_SETTINGS = {"SMS_URL": "http://91.204.239.44/broker-api/send","SMS_LOGIN": "LOGIN","SMS_PASSWORD": "PASSWORD"}``` set in your settings.py file
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
+Required packages:
 ```markdown
-Syntax highlighted code block
+pip install django-sms-uz
+pip install djangorestframework
+pip install requests
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+For more details see [documentation](https://pypi.org/project/django-sms-uz/).
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/firdavsDev/Django-SMS/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Contact
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+If you have other addition ideas or face to face with any bugs in this Django package You can create  in GitHub issues. Help develop other DJango SMS versons !!!
