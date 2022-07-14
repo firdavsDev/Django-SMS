@@ -15,3 +15,5 @@ Quick start
 8. Check your terminal for a response and Django admin will tell you if it was successful or not
 9. You could use call ``from SMS.sms_utils import SMS_Sender`` to get the SMS class and send sms using by the way ``SMS_Sender(phone_number, message).SendSmsOneContact()`` it returns a response
 10. Don't forget to add ``SMS`` to your INSTALLED_APPS list and add SMS_SETTINGS = {"SMS_URL": "http://91.204.239.44/broker-api/send","SMS_LOGIN": "LOGIN","SMS_PASSWORD": "PASSWORD"} set in your settings.py file
+
+![Img](https://github.com/firdavsDev/Django-SMS//blob/master/carbon.png?raw=true)
