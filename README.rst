@@ -18,4 +18,3 @@ Quick start
 
 ![Img](https://github.com/firdavsDev/Django-SMS//blob/master/carbon.png?raw=true)
 
-https://raw.githubusercontent.com/firdavsDev/Django-SMS/master/carbon.png
