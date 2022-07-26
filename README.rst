@@ -17,3 +17,5 @@ Quick start
 10. Don't forget to add ``SMS`` to your INSTALLED_APPS list and add SMS_SETTINGS = {"SMS_URL": "http://91.204.239.44/broker-api/send","SMS_LOGIN": "LOGIN","SMS_PASSWORD": "PASSWORD"} set in your settings.py file
 
 ![Img](https://github.com/firdavsDev/Django-SMS//blob/master/carbon.png?raw=true)
+
+https://raw.githubusercontent.com/firdavsDev/Django-SMS/master/carbon.png
