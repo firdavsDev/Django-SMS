@@ -1,9 +1,9 @@
 ===============================
-Django send SMS using API(uz)
+Django send SMS using API(uz) (Tuzatilishlar olib borilmoqda... 🛠 )
 ===============================
 
 
-Quick start
+Quick start 
 ------------
 
         1. Create a new project
